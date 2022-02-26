@@ -1,7 +1,7 @@
 @import '../../variables';
 
 footer {
-	padding-bottom: 50px;
+	display: block;
 	.container {
 		padding: 24px 15px;
 		border-top: solid 1px #dbdedf;
@@ -31,50 +31,54 @@ footer {
 			}
 		}
 	}
-	.footerLogo {
-		max-width: 240px;
-		margin-bottom: 24px;
-		img {
-			margin-bottom: 12px;
-		}
-		p {
-			font-family: Lato;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 21px;
-			letter-spacing: 0em;
-			text-align: left;
-		}
-	}
-	.footerLinks {
-		max-width: 240px;
-		margin-bottom: 24px;
-		ul {
-			li {
+	.footerRegular {
+		margin-top: 80px;
+		.footerLogo {
+			max-width: 240px;
+			margin-bottom: 24px;
+			img {
 				margin-bottom: 12px;
+			}
+			p {
+				font-family: Lato;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 21px;
+				letter-spacing: 0em;
+				text-align: left;
+			}
+		}
+		.footerLinks {
+			max-width: 240px;
+			margin-bottom: 24px;
+			ul {
+				li {
+					margin-bottom: 12px;
+				}
+			}
+		}
+		.footerForm {
+			max-width: 240px;
+			display: flex;
+			flex-direction: column;
+			input {
+				padding: 6px 12px;
+				border: 1px solid #dbdedf;
+				margin-bottom: 12px;
+				border-radius: 2px;
+				font-family: Lato;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 20px;
+				letter-spacing: 0em;
+				text-align: left;
 			}
 		}
 	}
-	.footerForm {
-		max-width: 240px;
-		display: flex;
-		flex-direction: column;
-		input {
-			padding: 6px 12px;
-			border: 1px solid #dbdedf;
-			margin-bottom: 12px;
-			border-radius: 2px;
-			font-family: Lato;
-			font-size: 14px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 20px;
-			letter-spacing: 0em;
-			text-align: left;
-		}
-	}
 	.footerLegal {
+		margin-bottom: 50px;
 		font-family: Lato;
 		font-size: 14px;
 		font-style: normal;

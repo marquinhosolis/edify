@@ -1,4 +1,5 @@
 import React from 'react';
+import BookList from '../BookList/BookList';
 import Button from '../Button/Button';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -10,6 +11,7 @@ export default function App() {
 			<Header />
 			<main>
 				<div className="container">
+					<BookList />
 					<div className="addBookButtonWrapper">
 						<Button
 							label="Adicionar Livro"
