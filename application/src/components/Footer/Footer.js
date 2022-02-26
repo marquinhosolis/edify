@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo.svg';
 import Button from '../Button/Button';
 import './Footer.scss';
 import { IoChevronUpOutline } from 'react-icons/io5';
