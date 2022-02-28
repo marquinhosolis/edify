@@ -1,9 +1,11 @@
 @import '../../variables';
 
 .dropdownBooks {
-	background: red;
+	// display: none;
 	width: 100%;
 	max-width: 495px;
+	max-height: 400px;
+	overflow: auto;
 	background: #ffffff;
 	border: 1px solid #c5d3d3;
 	box-sizing: border-box;
