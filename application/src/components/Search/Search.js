@@ -2,6 +2,7 @@ import React from 'react';
 import './Search.scss';
 import DropdownBooks from '../DropdownBooks/DropdownBooks';
 import { IoSearchOutline, IoAdd } from 'react-icons/io5';
+import Button from '../Button/Button';
 
 export default function Search() {
 	return (
@@ -15,10 +16,10 @@ export default function Search() {
 				<IoSearchOutline />
 				<DropdownBooks />
 			</div>
-			<button className="addManualButton">
+			<Button styleName="addManualButton btn-transparent">
 				<IoAdd />
 				Preencher manualmente
-			</button>
+			</Button>
 		</div>
 	);
 }

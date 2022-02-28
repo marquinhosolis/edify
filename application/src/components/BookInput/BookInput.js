@@ -48,7 +48,14 @@ export default function BookInput() {
 						placeholder="Escrever"
 					></textarea>
 				</div>
-				<Button label="Cadastrar" styleName="btn-default" />
+				<div className="bookInputButtons">
+					<Button label="Cancelar" styleName="btn-transparent">
+						cancelar
+					</Button>
+					<Button label="Cadastrar" styleName="btn-default">
+						Cadastrar
+					</Button>
+				</div>
 			</div>
 		</div>
 	);

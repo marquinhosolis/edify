@@ -38,7 +38,7 @@ export default function Footer() {
 					<div className="footerForm">
 						<strong>Inscreva-se</strong>
 						<input type="text" placeholder="Seu e-mail" />
-						<Button styleName="btn-default2" label="Inscreva-se" />
+						<Button styleName="btn-default2">Inscreva-se</Button>
 					</div>
 				</div>
 			</div>

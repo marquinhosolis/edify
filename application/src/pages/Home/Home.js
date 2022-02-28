@@ -10,10 +10,7 @@ export default function Home() {
 				<div className="container">
 					<BookList />
 					<div className="addBookButtonWrapper">
-						<Button
-							label="Adicionar Livro"
-							styleName="btn-default"
-						/>
+						<Button styleName="btn-default">Adicionar Livro</Button>
 					</div>
 				</div>
 			</main>
