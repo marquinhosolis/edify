@@ -2,7 +2,8 @@ import React from 'react';
 import './AdicionarLivro.scss';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import Search from '../../components/Search/Search';
-import BookInput from '../../components/BookInput/BookInput';
+// import BookInput from '../../components/BookInput/BookInput';
+import BookInputManual from '../../components/BookInputManual/BookInputManual';
 
 export default function AdicionarLivro() {
 	return (
@@ -12,7 +13,8 @@ export default function AdicionarLivro() {
 				<h1 className="tituloPagina">Adicionar Livro</h1>
 				<div className="inputBookWrapper">
 					<Search />
-					<BookInput />
+					{/* <BookInput /> */}
+					<BookInputManual />
 				</div>
 			</div>
 		</main>

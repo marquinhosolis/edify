@@ -16,32 +16,8 @@
 		}
 	}
 	.bookInfo {
-		h2 {
-			margin-bottom: 8px;
-			font-family: Lato;
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 24px;
-			letter-spacing: 0em;
-			text-align: left;
-			color: #343a3b;
-		}
-		.author {
-			margin-bottom: 16px;
-			font-family: Lato;
-			font-size: 12px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 18px;
-			letter-spacing: 0em;
-			text-align: left;
-			color: #0098a6;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
 		.inputWrapper {
+			position: relative;
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
@@ -61,7 +37,7 @@
 				}
 			}
 			input {
-				width: 60%;
+				width: 100%;
 				padding: 8px;
 				border: 1px solid #343a3b;
 				border-radius: 4px;
@@ -73,12 +49,16 @@
 				letter-spacing: 0em;
 				text-align: left;
 				color: #616b6d;
+			}
+			input[type='date'] {
+				width: 60%;
 				@media (min-width: 1024px) {
 					width: 70%;
 				}
 			}
 			textarea {
 				width: 100%;
+				padding: 8px;
 				font-family: Lato;
 				font-size: 16px;
 				font-style: normal;
