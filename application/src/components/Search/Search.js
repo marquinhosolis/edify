@@ -5,7 +5,7 @@ import { IoSearchOutline, IoAdd } from 'react-icons/io5';
 
 export default function Search() {
 	return (
-		<>
+		<div>
 			<div className="searchBook">
 				<label>Informe o nome do livro</label>
 				<input
@@ -19,6 +19,6 @@ export default function Search() {
 				<IoAdd />
 				Preencher manualmente
 			</button>
-		</>
+		</div>
 	);
 }

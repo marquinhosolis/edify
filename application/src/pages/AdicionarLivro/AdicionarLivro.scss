@@ -11,6 +11,13 @@
 	color: #616b6d;
 }
 
+.inputBookWrapper {
+	@media (min-width: 768px) {
+		display: flex;
+		gap: 16px;
+	}
+}
+
 .searchBook {
 	position: relative;
 	.dropdownBooks {
