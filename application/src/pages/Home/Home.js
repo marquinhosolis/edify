@@ -12,7 +12,7 @@ export default function Home() {
 			<Header />
 			<main id="home">
 				<div className="container">
-					<BookList />
+					<BookList userId="6" />
 					<div className="addBookButtonWrapper">
 						<Link to="/new">
 							<Button styleName="btn-default">
