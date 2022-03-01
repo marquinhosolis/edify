@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 // import Home from './pages/Home/Home';
-import AdicionarLivro from './pages/AdicionarLivro/AdicionarLivro';
+// import AdicionarLivro from './pages/AdicionarLivro/AdicionarLivro';
+import Routes from './Routes';
 import './index.scss';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Header />
-		<AdicionarLivro />
-		<Footer />
+		<Routes />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

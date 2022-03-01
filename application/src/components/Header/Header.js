@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/logo.svg';
 import './Header.scss';
 import { IoCaretDown } from 'react-icons/io5';
@@ -8,7 +9,9 @@ export default function Header() {
 		<header>
 			<div className="container">
 				<div className="logoHeader">
-					<img src={Logo} alt="Reading.com logo" />
+					<Link to="/">
+						<img src={Logo} alt="Reading.com logo" />
+					</Link>
 				</div>
 				<nav>
 					<ul>
@@ -17,6 +20,7 @@ export default function Header() {
 						</li>
 					</ul>
 				</nav>
+
 				<div className="avatarHeader">
 					<img
 						src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=35"
