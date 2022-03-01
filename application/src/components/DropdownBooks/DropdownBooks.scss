@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .dropdownBooks {
-	display: none;
+	//display: none;
 	width: 100%;
 	max-width: 495px;
 	max-height: 400px;
@@ -14,6 +14,7 @@
 	ul {
 		padding: 0 16px;
 		li {
+			cursor: pointer;
 			padding: 16px 0;
 			border-bottom: 1px solid #c5d3d3;
 			display: flex;
@@ -21,7 +22,8 @@
 			gap: 8px;
 			.bookCover {
 				width: 50px;
-				@include aspect-ratio(50, 60);
+				@include aspect-ratio(50, 70);
+				background: #ececec;
 				img {
 					height: 100%;
 					width: 100%;
@@ -52,7 +54,7 @@
 					text-align: left;
 					color: #616b6d;
 				}
-				.releaseDate {
+				.pageCount {
 					font-family: Lato;
 					font-size: 12px;
 					font-style: normal;

@@ -3,7 +3,7 @@ import './BookInput.scss';
 import { IoStar } from 'react-icons/io5';
 import Button from '../Button/Button';
 
-export default function BookInput() {
+export default function BookInput(props) {
 	return (
 		<div className="bookInput">
 			<div className="bookCover">
@@ -49,9 +49,11 @@ export default function BookInput() {
 					></textarea>
 				</div>
 				<div className="bookInputButtons">
-					<Button label="Cancelar" styleName="btn-transparent">
-						cancelar
-					</Button>
+					<span onClick={props.cancelInput()}>
+						<Button label="Cancelar" styleName="btn-transparent">
+							cancelar
+						</Button>
+					</span>
 					<Button label="Cadastrar" styleName="btn-default">
 						Cadastrar
 					</Button>
