@@ -4,23 +4,22 @@ import { IoStar } from 'react-icons/io5';
 import Button from '../Button/Button';
 
 export default function BookInput(props) {
+	const [bookInfo, setBookInfo] = React.useState(
+		JSON.parse(localStorage.getItem('bookInfo'))
+	);
+
 	return (
 		<div className="bookInput">
 			<div className="bookCover">
 				<div className="content">
-					<img
-						src="https://images-na.ssl-images-amazon.com/images/I/41UKpOWrZVL._SX346_BO1,204,203,200_.jpg"
-						alt="Book Title"
-					/>
+					<img src={bookInfo.bookCover} alt={bookInfo.bookTitle} />
 				</div>
 			</div>
 			<div className="bookInfo">
-				<h2>
-					A Guerra dos Tronos : As Crônicas de Gelo e Fogo, volume 1
-				</h2>
+				<h2>{bookInfo.bookTitle}</h2>
 				<p className="author">
-					<span> George R. R. Martin</span>
-					<span>420 páginas</span>
+					<span>{bookInfo.authorName}</span>
+					<span>{bookInfo.pageCount} páginas</span>
 				</p>
 				<div className="inputWrapper">
 					<label htmlFor="">Comecei a ler:</label>

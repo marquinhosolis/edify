@@ -18,7 +18,7 @@ export default function BookList(props) {
 			</div>
 			<ul>
 				{books.map((book) => (
-					<li>
+					<li key={Math.random()}>
 						<div className="bookCover">
 							<div className="content">
 								<img src={book.cover} alt={book.title} />
